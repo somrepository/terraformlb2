@@ -1,4 +1,4 @@
-name: "Harshit-first-action"
+name: "shannu-first-action"
 
 on: workflow_dispatch   
 jobs: 
