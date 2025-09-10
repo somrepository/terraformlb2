@@ -8,6 +8,7 @@ on:
 jobs: 
     terraform-job:  
         runs-on: superman
+        environment: prod 
         steps: 
             - name: Checkout
               uses: actions/checkout@v5.0.0
@@ -17,10 +18,7 @@ jobs:
               with:
                version: 1.13.0
 
-            - name: Terraform destroy
-              run: Terraform destroy
-              working-directory: ./todoapp_infra
-   
+        
             - name: Terraform Init
               run: terraform init
               working-directory: ./todoapp_infra
