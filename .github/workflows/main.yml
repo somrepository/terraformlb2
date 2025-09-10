@@ -1,6 +1,10 @@
 name: "shannu-first-action"
 
-on: workflow_dispatch     
+on:
+  push:
+    branches:
+      - main
+
 jobs: 
     terraform-job:  
         runs-on: superman
