@@ -2,7 +2,7 @@ name: "shannu-first-action"
 
 on: workflow_dispatch    
 jobs: 
-    terraform-job: 
+    terraform-job:  
         runs-on: superman
         steps: 
             - name: Checkout
