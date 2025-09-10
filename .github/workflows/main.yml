@@ -7,7 +7,7 @@ on:
 
 jobs: 
     terraform-job:  
-        runs-on: superman
+        runs-on: superman 
         environment: prod 
         steps: 
             - name: Checkout
