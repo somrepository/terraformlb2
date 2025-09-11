@@ -21,7 +21,7 @@ jobs:
         
             - name: Terraform Init
               run: terraform init
-              working-directory: ./todoapp_infra
+              working-directory: ./todoapp_infra 
         
             - name: Terraform Fmt Check
               run: terraform fmt
