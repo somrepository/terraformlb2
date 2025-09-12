@@ -11,7 +11,7 @@ permissions:
 jobs: 
     terraform-job:  
         runs-on: superman 
-        # environment: prod 
+        environment: plan 
         
         steps: 
             - name: Checkout
