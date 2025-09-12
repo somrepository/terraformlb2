@@ -8,7 +8,7 @@ on:
 jobs: 
     terraform-job:  
         runs-on: superman 
-        environment: prod 
+        # environment: prod 
         steps: 
             - name: Checkout
               uses: actions/checkout@v5.0.0
@@ -41,7 +41,7 @@ jobs:
               run: terraform plan 
               working-directory: ./todoapp_infra
 
-            - name: Terraform Apply
-              run: terraform apply -auto-approve
-              working-directory: ./todoapp_infra
+            # - name: Terraform Apply
+            #   run: terraform apply -auto-approve
+            #   working-directory: ./todoapp_infra
               
